@@ -1,0 +1,513 @@
+2024-09-17T16:02:55.9821088+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-17T16:02:56.0819257+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-17T16:02:56.0850225+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-17T16:02:56.0871581+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-17T16:13:52.0952932+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-17T16:13:52.5768461+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-17T16:13:52.5868013+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-17T16:13:52.5936689+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-17T16:14:02.4858720+07:00 0HN6MV4660CJL:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-17T16:14:06.1320854+07:00 0HN6MV4660CJL:00000001 [INF] Executed DbCommand ("121"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:14:09.0904827+07:00 0HN6MV4660CJL:00000002 [INF] Executed DbCommand ("198"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:14:19.4440438+07:00 0HN6MV4660CJO:00000001 [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:14:19.4567573+07:00 0HN6MV4660CJO:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-17T16:14:19.4603910+07:00 0HN6MV4660CJO:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-17T16:14:19.5101768+07:00 0HN6MV4660CJO:00000001 [INF] Executed DbCommand ("36"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:50:33.5062896+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-17T16:50:33.6653938+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-17T16:50:33.6682964+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-17T16:50:33.6719324+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-17T16:50:43.6562091+07:00 0HN6MVOM95ETJ:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-17T16:50:46.2924644+07:00 0HN6MVOM95ETJ:00000001 [INF] Executed DbCommand ("134"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:50:53.4712135+07:00 0HN6MVOM95ETM:00000001 [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:50:53.5119920+07:00 0HN6MVOM95ETN:00000001 [INF] Executed DbCommand ("130"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T16:50:53.5300190+07:00 0HN6MVOM95ETM:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-17T16:50:53.5392755+07:00 0HN6MVOM95ETM:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-17T16:50:53.6099955+07:00 0HN6MVOM95ETM:00000001 [INF] Executed DbCommand ("47"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:50:59.8346399+07:00 0HN6MVOM95ETO:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:51:04.1794649+07:00 0HN6MVOM95ETO:00000002 [INF] Executed DbCommand ("68"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:51:04.1875245+07:00 0HN6MVOM95ETO:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:51:09.3044267+07:00 0HN6MVOM95ETO:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:51:13.2424685+07:00 0HN6MVOM95ETO:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:51:13.2468279+07:00 0HN6MVOM95ETO:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:51:13.2553137+07:00 0HN6MVOM95ETP:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T16:51:54.7308745+07:00 0HN6MVOM95ETP:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T16:51:57.7218564+07:00 0HN6MVOM95ETP:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:52:00.6303804+07:00 0HN6MVOM95ETP:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:52:00.6315278+07:00 0HN6MVOM95ETO:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T16:52:00.6407852+07:00 0HN6MVOM95ETP:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:53:30.2654320+07:00 0HN6MVOM95ETQ:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:53:32.4635598+07:00 0HN6MVOM95ETQ:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:53:32.4701624+07:00 0HN6MVOM95ETQ:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T16:55:28.0218348+07:00 0HN6MVOM95ETR:00000001 [INF] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T16:55:30.8322171+07:00 0HN6MVOM95ETS:00000001 [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T16:55:30.8793655+07:00 0HN6MVOM95ETS:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:02:35.2407966+07:00 0HN6MVOM95ETT:00000001 [INF] Executed DbCommand ("106"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:02:35.3397197+07:00 0HN6MVOM95ETT:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:02:38.8701809+07:00 0HN6MVOM95ETT:00000002 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:02:38.8790463+07:00 0HN6MVOM95ETT:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:02:46.5674243+07:00 0HN6MVOM95ETU:00000001 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:03:11.5206535+07:00 0HN6MVOM95ETV:00000001 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:03:11.5416871+07:00 0HN6MVOM95ETV:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:04:21.6550625+07:00 0HN6MVOM95EU0:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:04:21.6827059+07:00 0HN6MVOM95EU0:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:04:23.9189625+07:00 0HN6MVOM95EU0:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:04:23.9345160+07:00 0HN6MVOM95EU0:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:04:51.7105963+07:00 0HN6MVOM95EU1:00000001 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:04:53.4838583+07:00 0HN6MVOM95EU1:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:04:53.4898762+07:00 0HN6MVOM95EU1:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:04:54.9682935+07:00 0HN6MVOM95EU2:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:04:59.6510375+07:00 0HN6MVOM95EU2:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:05:05.9544584+07:00 0HN6MVOM95EU3:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:05:07.9738855+07:00 0HN6MVOM95EU3:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:05:07.9808896+07:00 0HN6MVOM95EU3:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:05:11.3497725+07:00 0HN6MVOM95EU3:00000003 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:05:26.9394729+07:00 0HN6MVOM95EU4:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:05:29.1275960+07:00 0HN6MVOM95EU4:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:05:29.1380234+07:00 0HN6MVOM95EU4:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:05:29.1947213+07:00 0HN6MVOM95EU5:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:06:02.6985698+07:00 0HN6MVOM95EU6:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:06:07.6618274+07:00 0HN6MVOM95EU7:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:06:10.5615937+07:00 0HN6MVOM95EU7:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:06:10.6109634+07:00 0HN6MVOM95EU7:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:06:10.6648331+07:00 0HN6MVOM95EU8:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:06:22.7381038+07:00 0HN6MVOM95EU8:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:06:27.8327350+07:00 0HN6MVOM95EU8:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:06:37.1080179+07:00 0HN6MVOM95EU8:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:06:40.5971324+07:00 0HN6MVOM95EU9:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:06:40.5996869+07:00 0HN6MVOM95EUA:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:06:40.7543612+07:00 0HN6MVOM95EU9:00000001 [INF] Executed DbCommand ("127"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:07:30.6711752+07:00 0HN6MVOM95EUC:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:07:30.6750738+07:00 0HN6MVOM95EUB:00000001 [INF] Executed DbCommand ("126"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:07:30.7146964+07:00 0HN6MVOM95EUB:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:07:36.7259058+07:00 0HN6MVOM95EUD:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:07:39.6531458+07:00 0HN6MVOM95EUD:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:07:39.6583170+07:00 0HN6MVOM95EUD:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:07:41.1766443+07:00 0HN6MVOM95EUD:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:07:51.7943884+07:00 0HN6MVOM95EUE:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:07:51.8231321+07:00 0HN6MVOM95EUE:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:07:53.7637571+07:00 0HN6MVOM95EUE:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:07:57.2768008+07:00 0HN6MVOM95EUF:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:07:57.2851794+07:00 0HN6MVOM95EUG:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:07:57.2932640+07:00 0HN6MVOM95EUF:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:07:59.7600959+07:00 0HN6MVOM95EUF:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:08:04.4663087+07:00 0HN6MVOM95EUF:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:08:04.4734583+07:00 0HN6MVOM95EUG:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:08:04.4769226+07:00 0HN6MVOM95EUF:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:08:06.4178878+07:00 0HN6MVOM95EUH:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:08:10.2158019+07:00 0HN6MVOM95EUH:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:08:10.2181830+07:00 0HN6MVOM95EUI:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:08:10.2248334+07:00 0HN6MVOM95EUH:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:08:12.0484252+07:00 0HN6MVOM95EUH:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:10:40.8330998+07:00 0HN6MVOM95EUJ:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:10:43.1400303+07:00 0HN6MVOM95EUJ:00000002 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:10:43.1561725+07:00 0HN6MVOM95EUJ:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:01.3364475+07:00 0HN6MVOM95EUL:00000001 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:11:03.5252012+07:00 0HN6MVOM95EUL:00000002 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:03.5400428+07:00 0HN6MVOM95EUL:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:05.2911445+07:00 0HN6MVOM95EUM:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:11:08.1492528+07:00 0HN6MVOM95EUM:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:08.1566083+07:00 0HN6MVOM95EUM:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:11.7454067+07:00 0HN6MVOM95EUM:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:11:14.2621876+07:00 0HN6MVOM95EUM:00000004 [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:14.2729897+07:00 0HN6MVOM95EUM:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:33.7257601+07:00 0HN6MVOM95EUN:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:33.7935717+07:00 0HN6MVOM95EUN:00000001 [INF] Executed DbCommand ("32"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:35.4579361+07:00 0HN6MVOM95EUN:00000002 [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:35.4764881+07:00 0HN6MVOM95EUN:00000002 [INF] Executed DbCommand ("13"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:36.5379763+07:00 0HN6MVOM95EUN:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:36.5459840+07:00 0HN6MVOM95EUN:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:38.6005508+07:00 0HN6MVOM95EUN:00000004 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:11:41.0095517+07:00 0HN6MVOM95EUO:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:11:41.0231614+07:00 0HN6MVOM95EUO:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:11:42.0000317+07:00 0HN6MVOM95EUO:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:12:16.7817534+07:00 0HN6MVOM95EUP:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:12:24.2536391+07:00 0HN6MVOM95EUQ:00000001 [INF] Executed DbCommand ("983"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:12:24.3296726+07:00 0HN6MVOM95EUQ:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:12:30.9656160+07:00 0HN6MVOM95EUR:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:14:40.8778176+07:00 0HN6MVOM95EUS:00000001 [INF] Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:14:44.1404080+07:00 0HN6MVOM95EUS:00000002 [INF] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:14:44.4229838+07:00 0HN6MVOM95EUS:00000002 [INF] Executed DbCommand ("122"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:14:50.1662639+07:00 0HN6MVOM95EUT:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:14:53.2027460+07:00 0HN6MVOM95EUT:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:14:53.2187063+07:00 0HN6MVOM95EUT:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:15:06.0180323+07:00 0HN6MVOM95EUU:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:18:50.3961287+07:00 0HN6MVOM95EUV:00000001 [INF] Executed DbCommand ("89"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:18:50.4463426+07:00 0HN6MVOM95EUV:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:18:50.5124401+07:00 0HN6MVOM95EV0:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:19:37.5773329+07:00 0HN6MVOM95EV5:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[CreatedAt], [v].[Height], [v].[Poster], [v].[Source], [v].[Title], [v].[UpdatedAt], [v].[Width]
+FROM [Videos] AS [v]" (0723d8ff)
+2024-09-17T17:21:27.7512159+07:00 0HN6MVOM95EV6:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:21:41.4908827+07:00 0HN6MVOM95EV6:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:21:48.2663983+07:00 0HN6MVOM95EV6:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:21:48.2735660+07:00 0HN6MVOM95EV8:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-17T17:21:48.3196149+07:00 0HN6MVOM95EV6:00000003 [INF] Executed DbCommand ("16"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:21:52.7681264+07:00 0HN6MVOM95EV6:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:22:03.1844129+07:00 0HN6MVOM95EV6:00000006 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:28:24.6823112+07:00 0HN6MVOM95EV9:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:34:00.8655631+07:00 0HN6MVOM95EVA:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:34:03.5623180+07:00 0HN6MVOM95EVA:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:34:03.6058023+07:00 0HN6MVOM95EVA:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:35:48.0832984+07:00 0HN6MVOM95EVC:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-17T17:35:54.7511849+07:00 0HN6MVOM95EVD:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-17T17:35:54.7612190+07:00 0HN6MVOM95EVD:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-17T17:36:34.3874485+07:00 0HN6MVOM95EVG:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)

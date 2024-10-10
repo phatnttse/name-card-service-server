@@ -1,0 +1,330 @@
+2024-09-20T08:42:12.6658712+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-20T08:42:12.7728074+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-20T08:42:12.7768713+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-20T08:42:12.7792430+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-20T08:42:45.5402374+07:00 0HN6P2LPI089B:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-20T08:42:49.2022834+07:00 0HN6P2LPI089B:00000001 [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-20T08:44:09.0252756+07:00 0HN6P2LPI089E:00000001 [INF] Executed DbCommand ("834"ms) [Parameters=["@__slug_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId], [u0].[Id], [u0].[Avatar], [u0].[CompanyAddress], [u0].[CompanyName], [u0].[CoverPhoto], [u0].[CreatedAt], [u0].[Email], [u0].[FullName], [u0].[LinkedInUrl], [u0].[PhoneNumber], [u0].[Position], [u0].[UpdatedAt], [u0].[WebsiteUrl], [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [UserNameCards] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [NameCardTemplates] AS [n] ON [u].[NameCardTemplateId] = [n].[Id]
+WHERE [u].[Slug] = @__slug_0" (0723d8ff)
+2024-09-20T08:44:39.8759605+07:00 0HN6P2LPI089F:00000001 [INF] Executed DbCommand ("628"ms) [Parameters=["@__slug_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId], [u0].[Id], [u0].[Avatar], [u0].[CompanyAddress], [u0].[CompanyName], [u0].[CoverPhoto], [u0].[CreatedAt], [u0].[Email], [u0].[FullName], [u0].[LinkedInUrl], [u0].[PhoneNumber], [u0].[Position], [u0].[UpdatedAt], [u0].[WebsiteUrl], [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [UserNameCards] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [NameCardTemplates] AS [n] ON [u].[NameCardTemplateId] = [n].[Id]
+WHERE [u].[Slug] = @__slug_0" (0723d8ff)
+2024-09-20T08:44:44.7177366+07:00 0HN6P2LPI089F:00000002 [INF] Executed DbCommand ("77"ms) [Parameters=["@__slug_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId], [u0].[Id], [u0].[Avatar], [u0].[CompanyAddress], [u0].[CompanyName], [u0].[CoverPhoto], [u0].[CreatedAt], [u0].[Email], [u0].[FullName], [u0].[LinkedInUrl], [u0].[PhoneNumber], [u0].[Position], [u0].[UpdatedAt], [u0].[WebsiteUrl], [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [UserNameCards] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [NameCardTemplates] AS [n] ON [u].[NameCardTemplateId] = [n].[Id]
+WHERE [u].[Slug] = @__slug_0" (0723d8ff)
+2024-09-20T08:45:01.4476041+07:00 0HN6P2LPI089I:00000001 [INF] Executed DbCommand ("104"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Images] ([Id], [CreatedAt], [Height], [Src], [Type], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);" (0723d8ff)
+2024-09-20T08:45:06.4491935+07:00 0HN6P2LPI089I:00000002 [INF] Executed DbCommand ("29"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Images] ([Id], [CreatedAt], [Height], [Src], [Type], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);" (0723d8ff)
+2024-09-20T08:45:09.2429518+07:00 0HN6P2LPI089I:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-20T08:45:09.2982740+07:00 0HN6P2LPI089I:00000004 [INF] Executed DbCommand ("10"ms) [Parameters=["@p11='?' (Size = 450), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [Avatar] = @p0, [CompanyAddress] = @p1, [CompanyName] = @p2, [CoverPhoto] = @p3, [Email] = @p4, [FullName] = @p5, [LinkedInUrl] = @p6, [PhoneNumber] = @p7, [Position] = @p8, [UpdatedAt] = @p9, [WebsiteUrl] = @p10
+OUTPUT 1
+WHERE [Id] = @p11;" (0723d8ff)
+2024-09-20T08:45:09.3200136+07:00 0HN6P2LPI089I:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId]
+FROM [UserNameCards] AS [u]
+WHERE [u].[Id] = @__p_0" (0723d8ff)
+2024-09-20T08:45:09.4676366+07:00 0HN6P2LPI089I:00000005 [INF] Executed DbCommand ("36"ms) [Parameters=["@__slug_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId], [u0].[Id], [u0].[Avatar], [u0].[CompanyAddress], [u0].[CompanyName], [u0].[CoverPhoto], [u0].[CreatedAt], [u0].[Email], [u0].[FullName], [u0].[LinkedInUrl], [u0].[PhoneNumber], [u0].[Position], [u0].[UpdatedAt], [u0].[WebsiteUrl], [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [UserNameCards] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [NameCardTemplates] AS [n] ON [u].[NameCardTemplateId] = [n].[Id]
+WHERE [u].[Slug] = @__slug_0" (0723d8ff)
+2024-09-20T09:00:03.7319649+07:00 0HN6P2LPI089L:00000001 [INF] Executed DbCommand ("83"ms) [Parameters=["@__slug_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[LinkUrl], [u].[NameCardTemplateId], [u].[QRCodeUrl], [u].[Slug], [u].[UpdatedAt], [u].[UserId], [u0].[Id], [u0].[Avatar], [u0].[CompanyAddress], [u0].[CompanyName], [u0].[CoverPhoto], [u0].[CreatedAt], [u0].[Email], [u0].[FullName], [u0].[LinkedInUrl], [u0].[PhoneNumber], [u0].[Position], [u0].[UpdatedAt], [u0].[WebsiteUrl], [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [UserNameCards] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [NameCardTemplates] AS [n] ON [u].[NameCardTemplateId] = [n].[Id]
+WHERE [u].[Slug] = @__slug_0" (0723d8ff)
+2024-09-20T09:00:26.0737325+07:00 0HN6P2LPI089M:00000001 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-20T09:01:37.2170744+07:00 0HN6P2LPI089N:00000001 [INF] Executed DbCommand ("261"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-20T09:01:42.1912213+07:00 0HN6P2LPI089P:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-20T09:01:42.5199667+07:00 0HN6P2LPI089O:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-20T09:01:42.6730487+07:00 0HN6P2LPI089O:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-20T09:01:42.6857951+07:00 0HN6P2LPI089O:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-20T09:01:42.9002119+07:00 0HN6P2LPI089O:00000001 [INF] Executed DbCommand ("102"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-20T09:01:49.2519100+07:00 0HN6P2LPI089Q:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]
+WHERE [n].[Id] = @__p_0" (0723d8ff)
+2024-09-20T09:12:21.8304878+07:00 0HN6P2LPI089R:00000001 [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[CreatedAt], [n].[Name], [n].[Thumbnail], [n].[UpdatedAt], [n].[Url]
+FROM [NameCardTemplates] AS [n]" (0723d8ff)
+2024-09-20T09:16:37.6205361+07:00 0HN6P2LPI089S:00000001 [INF] Executed DbCommand ("111"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-20T09:16:37.6589082+07:00 0HN6P2LPI089S:00000001 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-20T09:16:49.2030007+07:00 0HN6P2LPI089T:00000001 [INF] Executed DbCommand ("32"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Images] ([Id], [CreatedAt], [Height], [Src], [Type], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);" (0723d8ff)
+2024-09-20T09:32:20.1598991+07:00 0HN6P2LPI089V:00000001 [ERR] Failed executing DbCommand ("140"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Videos] ([Id], [CreatedAt], [Height], [Poster], [Source], [Title], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);" (627a98df)
+2024-09-20T09:32:20.5312792+07:00 0HN6P2LPI089V:00000001 [ERR] An exception occurred in the database while saving changes for context type '"Demo_Grapesjs.Core.DBContext.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'NameCardService.dbo.Videos'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d58e9e60-4c0b-46b2-8869-aa449bb6024c
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'NameCardService.dbo.Videos'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d58e9e60-4c0b-46b2-8869-aa449bb6024c
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Demo_Grapesjs.Repositories.UnitOfWork.SaveChangesAsync() in D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\Repositories\UnitOfWork.cs:line 21
+2024-09-20T09:35:03.2068208+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-20T09:35:03.3765189+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-20T09:35:03.3875118+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-20T09:35:03.3994083+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-20T09:35:09.5063333+07:00 0HN6P3JAE46AO:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-20T09:35:29.3651878+07:00 0HN6P3JAE46AO:00000001 [ERR] Failed executing DbCommand ("113"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Videos] ([Id], [CreatedAt], [Height], [Poster], [Source], [Title], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);" (627a98df)
+2024-09-20T09:37:07.2084034+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-09-20T09:37:07.2499551+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-09-20T09:37:07.2531427+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-09-20T09:37:07.2543781+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-09-20T09:37:07.3059779+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-09-20T09:37:07.3221337+07:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-09-20T09:37:26.8424723+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-20T09:37:27.3003289+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-20T09:37:27.3121056+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-20T09:37:27.3346971+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-20T09:37:41.9805372+07:00 0HN6P3KL77ECC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-20T09:37:46.6940544+07:00 0HN6P3KL77ECC:00000001 [ERR] Failed executing DbCommand ("76"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Videos] ([Id], [CreatedAt], [Height], [Poster], [Source], [Title], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);" (627a98df)
+2024-09-20T09:37:46.7564136+07:00 0HN6P3KL77ECC:00000001 [ERR] An exception occurred in the database while saving changes for context type '"Demo_Grapesjs.Core.DBContext.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'NameCardService.dbo.Videos'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a7f0037c-5d42-430e-b559-ecf8a9d98779
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Description', table 'NameCardService.dbo.Videos'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:a7f0037c-5d42-430e-b559-ecf8a9d98779
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Demo_Grapesjs.Repositories.UnitOfWork.SaveChangesAsync() in D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\Repositories\UnitOfWork.cs:line 21
+2024-09-20T09:38:41.0601479+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-09-20T09:38:41.0871189+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-09-20T09:38:41.0901831+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-09-20T09:38:41.0920344+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-09-20T09:38:41.1205424+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-09-20T09:38:41.1398598+07:00  [INF] Applying migration '"20240920023829_Update_Video_Entity"'. (0e2ac64d)
+2024-09-20T09:38:41.3175902+07:00  [INF] Executed DbCommand ("124"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Videos]') AND [c].[name] = N'Description');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Videos] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Videos] DROP COLUMN [Description];" (0723d8ff)
+2024-09-20T09:38:41.3337750+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240920023829_Update_Video_Entity', N'8.0.8');" (0723d8ff)
+2024-09-20T09:39:31.1356467+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-20T09:39:31.4022606+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-20T09:39:31.4061894+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-20T09:39:31.4086627+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
+2024-09-20T09:39:36.1024423+07:00 0HN6P3LQ7NF5Q:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2024-09-20T09:39:40.5062516+07:00 0HN6P3LQ7NF5Q:00000001 [INF] Executed DbCommand ("77"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Videos] ([Id], [CreatedAt], [Height], [Poster], [Source], [Title], [UpdatedAt], [Width])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);" (0723d8ff)
+2024-09-20T09:42:13.1685267+07:00 0HN6P3LQ7NF5R:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-20T09:42:13.2114750+07:00 0HN6P3LQ7NF5R:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-20T09:42:13.2180469+07:00 0HN6P3LQ7NF5R:00000001 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-09-20T09:42:13.2774983+07:00 0HN6P3LQ7NF5R:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-20T09:42:15.6103441+07:00 0HN6P3LQ7NF5R:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[CreatedAt], [v].[Height], [v].[Poster], [v].[Source], [v].[Title], [v].[UpdatedAt], [v].[Width]
+FROM [Videos] AS [v]" (0723d8ff)
+2024-09-20T09:44:14.3462786+07:00 0HN6P3LQ7NF5V:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+WHERE [i].[Id] = @__p_0" (0723d8ff)
+2024-09-20T09:45:02.5992831+07:00 0HN6P3LQ7NF60:00000001 [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-20T09:45:02.6275172+07:00 0HN6P3LQ7NF60:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-20T09:45:10.3057628+07:00 0HN6P3LQ7NF61:00000001 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Images] AS [i]" (0723d8ff)
+2024-09-20T09:45:10.5672550+07:00 0HN6P3LQ7NF61:00000001 [INF] Executed DbCommand ("184"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[CreatedAt], [i].[Height], [i].[Src], [i].[Type], [i].[UpdatedAt], [i].[Width]
+FROM [Images] AS [i]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2024-09-20T09:45:11.7096760+07:00 0HN6P3LQ7NF61:00000002 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [v].[Id], [v].[CreatedAt], [v].[Height], [v].[Poster], [v].[Source], [v].[Title], [v].[UpdatedAt], [v].[Width]
+FROM [Videos] AS [v]" (0723d8ff)
+2024-09-20T09:45:14.3073283+07:00 0HN6P3LQ7NF63:00000002 [INF] Executed DbCommand ("44"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [v].[Id], [v].[CreatedAt], [v].[Height], [v].[Poster], [v].[Source], [v].[Title], [v].[UpdatedAt], [v].[Width]
+FROM [Videos] AS [v]
+WHERE [v].[Id] = @__p_0" (0723d8ff)
+2024-09-20T09:45:14.3997875+07:00 0HN6P3LQ7NF63:00000002 [INF] Executed DbCommand ("26"ms) [Parameters=["@p0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Videos]
+OUTPUT 1
+WHERE [Id] = @p0;" (0723d8ff)
+2024-09-20T10:36:24.8657076+07:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2024-09-20T10:36:24.9534066+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-09-20T10:36:24.9560632+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-09-20T10:36:24.9576606+07:00  [INF] Content root path: "D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs" (cc26f24e)
